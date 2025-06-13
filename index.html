@@ -1,45 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Vendas - MG Veículos</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana do Zero ao Programador Contratado -
+        Landing Page GTA</title>
+    <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-icon">
+
+    <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/fontes/ChaletComprime.ttf">
+                
 </head>
+
 <body>
-<header class="header-top">
-  <img src="/imagens/Captura de tela 2025-06-07 015103.png" alt="Logo da Concessionária">
-</header>
-<div class="container">
-    <h1>MG Veículos - Cadastro de Vendas</h1>
-   <form id="vendaForm" action="/enviar-formulario" method="POST" enctype="multipart/form-data">
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./src/imagens/logo-rockstar.svg" alt="Logo Rockstar Games">
+            <hr>
+            <img src="./src/imagens/logo-gta.svg" alt="Logo GTA V">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#comprar">Comprar</a>
+                </li>
+                <li>
+                    <a href="https:support.rockstargames.com/categories/200013306" target="_blank">Suporte
+                        <img src="./src/imagens/icone-link.svg" alt="Icone de link de suporte">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home" id="home">
+        <img class="imagem-fundo" src="src/imagens/bg-main.png"
+            alt="Rapaz de moletom laranja ao do carro esportivo amarelo">
+        <div class="informacoes">
+            <div class="lista-de-jogos">
+                <img src="./src/imagens/logo-gta-v.svg" alt="Logo GTA V">
+                <img src="./src/imagens/logo-gta-online.svg" alt="Logo GTA Online">
+            </div>
+            <h1 class="titulo" style="font-family: 'Chalet', sans-serif;">
+                Já disponíveis para Playstation 5 e Xbox Series X|S</h1>
+            <p class="texto">
+                Experimente o fenômenos do entretenimento Grand Theft Auto V e GTA Online
+            </p>
+            <a class="btn-comprar" href="#comprar">Comprar Já</a>
 
-      <label for="marca">Marca:</label>
-      <input type="text" id="marca" name="marca" required>
+        </div>
+    </main>
+    <section class="compre-ja" id="comprar">
+        <h2 class="titulo">Compre Já</h2>
+        <div class="cartao">
+            <img class="capa-do-jogo" src="./src/imagens/gta5.jpg" alt="Capa do jogo GTA V">
 
-      <label for="modelo">Modelo:</label>
-      <input type="text" id="modelo" name="modelo" required>
+            <div class="informacoes">
+                <h3>Grand Theft Auto V</h3>
+                <p>
+                    Inclui <strong>Modo História do GTA V</strong> e <strong>GTA Online</strong>
+                </p>
+                <ul class="plataformas">
+                    <li>
+                        <img src="./src/imagens/logo-ps5.svg" alt="Logo Playstation 5">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-xbox-series-s.svg" alt="Logo XBOX Series S">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-ps4.svg" alt="Logo Playstation 4">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-xbox-one.svg" alt="Logo XBOX One">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-pc.svg" alt="Logo PC">
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-plataforma">
+                Selecione a plataforma
 
-      <label for="ano">Ano:</label>
-      <input type="number" id="ano" name="ano" min="1900" max="2099" required>
-
-      <label for="valor">Valor (R$):</label>
-      <input type="number" id="valor" name="valor" step="0.01" required>
-
-      <label for="descricao">Descrição:</label>
-      <textarea id="descricao" name="descricao" rows="4"></textarea>
-
-      <label for="imagens">Fotos do veículo (até 5):</label>
-      <input type="file" id="imagens" name="imagens[]" accept="image/*" multiple required>
-      <div id="preview"></div>
-
-      <button type="submit">Cadastrar Venda</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
+                <ul class="plataformas">
+                    <li>
+                        <img src="./src/imagens/logo-ps5.svg" alt="Logo Playstation 5">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-xbox-series-s.svg" alt="Logo XBOX Series S">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-ps4.svg" alt="Logo Playstation 4">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-xbox-one.svg" alt="Logo XBOX One">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-pc.svg" alt="Logo PC">
+                    </li>
+                </ul>
+            </button>
+        </div>
+    </section>
+    <script src="./src/js/index.js"></script>
 </body>
+
 </html>
-
-
-
